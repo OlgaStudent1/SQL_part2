@@ -64,7 +64,7 @@ region_id	  INTEGER	Регион магазина
 •	region_id = 1 — первый сервер;
 •	region_id = 2 — второй сервер.
 На каждом сервере создаются одинаковые таблицы users, books и stores, но содержимое таблиц различается.
-![alt text]()
+![alt text](https://github.com/OlgaStudent1/SQL_part2/blob/main/img/%D0%B3%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0.png)
 В данной архитектуре приложение должно определять регион записи и направлять запрос на соответствующий сервер.
 Преимущества:
 •	распределение объёма данных между серверами;
@@ -94,7 +94,7 @@ first_name	VARCHAR(50)	Имя
 last_name	  VARCHAR(50)	Фамилия
 phone	      VARCHAR(20)	Телефон
 Для восстановления полной информации используется общий идентификатор user_id.
-  ![alt text]()
+  ![alt text](https://github.com/OlgaStudent1/SQL_part2/blob/main/img/vertilal.png)
 Для обращения к удалённой таблице использован механизм PostgreSQL Foreign Data Wrapper (postgres_fdw).
 Преимущества:
 •	разделение функциональной нагрузки;
@@ -109,10 +109,10 @@ phone	      VARCHAR(20)	Телефон
 
  # Задание 3
  
-  ![alt text]() 
-  ![alt text]()
-  ![alt text]() 
-  ![alt text]()
-  ![alt text]() 
-  ![alt text]() 
-  ![alt text]() 
+  Докер:![alt text](https://github.com/OlgaStudent1/SQL_part2/blob/main/img/docker%20compose.yml) 
+  Создание соединения между серверами: ![alt text](https://github.com/OlgaStudent1/SQL_part2/blob/main/img/PostgreSQL%20Foreign%20Data%20Wrapper.sql)
+  Горизонтальная схема:![alt text](https://github.com/OlgaStudent1/SQL_part2/blob/main/img/goriz%20schema.sql) 
+  Горизонт.схема, шарда 1:![alt text](https://github.com/OlgaStudent1/SQL_part2/blob/main/img/horizontal_shard1_data.sql)
+  Горизонт.схема, шарда 2:![alt text](https://github.com/OlgaStudent1/SQL_part2/blob/main/img/horizontal_shard2_data.sql) 
+  Вертик.шаринг, шарда 1: ![alt text](https://github.com/OlgaStudent1/SQL_part2/blob/main/img/vertical_shard1_auth.sql) 
+  Вертик.шаринг, шарда 2:![alt text](https://github.com/OlgaStudent1/SQL_part2/blob/main/img/vertical_shard1_auth.sql) 
